@@ -1,0 +1,64 @@
+.header {
+    color: white;
+    display: flex;
+    padding: 20px; /* space between content and border */
+    align-items: center; /* align items to center of div */
+    justify-content: space-between; /* pushes two containers apart from each other */
+    overflow-x: scroll; /* specifies whether to clip the content, add a scroll bar, or display overflow content whtn it goes over the edges */ 
+}
+
+/* Hide scrollbar for Chrome, Safari, and Opera */
+.header::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.header {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.header_icon > .MuiSvgIcon-root { /* for each icon in the header__icon, center them */
+    font-size: 30;
+    margin-left: auto;
+    margin-right: auto ;
+    display: inline;
+}
+
+.header_icon--active > p{
+    display: inline !important;
+}
+
+.header_icon {
+    display: flex;
+    flex-direction: column;
+    width: 100px; 
+    cursor: pointer;
+
+    
+}
+
+.header_icon:hover > p {
+    display: inline-flex ;
+}
+
+
+.header_icon > p {
+    display: none;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: small;
+}
+
+.header_icons {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.header > img { /* .class > obj: for objs in class */
+    object-fit: contain; /*aspect ration stays the same */
+    height: 80px; /* img height */
+}
